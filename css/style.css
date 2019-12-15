@@ -1,0 +1,52 @@
+/* variables */
+:root {
+    --white-color: #ffffff;
+    --black-color: #272727;
+    --dark-gray-color: #2c353d;
+    --gray-color: #4c6066;
+    --light-gray-color: #dee2e3;
+    --blue-color: #0a0e33;
+    --red-color: #a04c44;
+    --brown-color: #ba9c8b;
+}
+
+/* general */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #19161a;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* media queries*/
+@media only screen and (min-width: 990px) {
+
+}
