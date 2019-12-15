@@ -17,6 +17,19 @@ function changeTitle() {
     })
 }
 
+function showHamburgerMenu() {
+    const hamburger = document.querySelector('.hamburger-btn');
+    const nav = document.querySelector('.navigation');
+
+    const handleClick = () => {
+        hamburger.classList.toggle('hamburger-active');
+        hamburger.setAttribute('aria-expanded', hamburger.classList.contains('hamburger-active'));
+        nav.classList.toggle('navigation-active');
+    }
+
+    hamburger.addEventListener("click", handleClick);
+}
+
 function showTooltip() {
     const questionSigns = document.querySelectorAll(".tooltip-wrapper");
 
@@ -35,6 +48,7 @@ function showTooltip() {
 
 const init = function() {
     changeTitle();
+    showHamburgerMenu();
     // showTooltip();
 }
 
