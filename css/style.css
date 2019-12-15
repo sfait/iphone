@@ -264,13 +264,95 @@ body {
     background: rgba(255, 255, 255, 0.4);
 }
 
+/* about-us */
+.about-us {
+    padding: 6rem 0;
+}
+
+.about-us-wrapper {
+    padding: 3rem 2rem;
+    border: 1px solid var(--silver-color);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background: var(--white-color);
+    border: 1px solid var(--silver-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.third-header {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.third-header::after {
+    content: "";
+    width: 90%;
+    height: 1.5px;
+    background: var(--silver-color);
+    opacity: 0.7;
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+}
+
+.about-us p {
+    font-size: 0.8rem;
+}
+
+/* iphone icon */
+.iphone {
+    width: 25px;
+    height: 40px;
+    background: var(--silver-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iphone-screen {
+    width: 20px;
+    height: 26px;
+    background: var(--white-color);
+    border-radius: 2px;
+    margin-bottom: 2.5px;
+}
+
+.iphone-btn {
+    width: 5px;
+    height: 5px;
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
 /* media queries*/
 @media only screen and (min-width: 990px) {
+    /* hero */
     .hero {
         padding: 10rem 0;
     }
 
-    .second-header {
-        font-size: 2.5rem;
+    /* about-us */
+    .about-us p {
+        font-size: 1rem;
     }
 }
