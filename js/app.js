@@ -30,6 +30,24 @@ function showHamburgerMenu() {
     hamburger.addEventListener("click", handleClick);
 }
 
+function showPhoto() {
+    const photos = document.querySelectorAll(".gallery-photo");
+
+    for (let i = 0; i < photos.length; i++) {
+        photos[i].addEventListener("click", function() {
+            const modal = this.querySelector(".modal");
+
+            this.querySelector(".modal").classList.toggle("show-modal");
+
+            window.addEventListener("click", function(e) {
+                if (e.target == modal) {
+                    modal.classList.toggle("show-modal");
+                }
+            })
+        })
+    }
+}
+
 function showTooltip() {
     const questionSigns = document.querySelectorAll(".tooltip-wrapper");
 
@@ -49,6 +67,7 @@ function showTooltip() {
 const init = function() {
     changeTitle();
     showHamburgerMenu();
+    showPhoto();
     // showTooltip();
 }
 
