@@ -68,7 +68,7 @@ const init = function() {
     changeTitle();
     showHamburgerMenu();
     showPhoto();
-    // showTooltip();
+    showTooltip();
 }
 
 document.addEventListener("DOMContentLoaded", init);
