@@ -65,8 +65,38 @@ function showTooltip() {
 }
 
 function sendForm() {
+    const form = document.getElementById("form");
+    const amount = document.querySelector(".amount");
+    const chooseProduct = document.querySelector('select[name="chooseProduct"]');
+    const chooseColor = document.querySelector('select[name="chooseColor"]');
+    const chooseCapacity = document.querySelector('select[name="chooseCapacity"]');
+    let sum;
 
+    form.addEventListener('change', function(e) {
+        e.preventDefault();
 
+        if(chooseProduct.value == "-1") {
+            sum = 0;
+            amount.textContent = 0;
+        } else if (chooseProduct.value == "iphone") {
+            sum = 99.99;
+            amount.textContent = 99.99;
+        } else {
+            sum = 129.99;
+            amount.textContent = 129.99;
+        }
+
+        if(chooseCapacity.value == "256") {
+            sum += 40.00;
+            amount.textContent = sum;
+        }
+
+        // if (!errors.length) {
+        //     this.submit();
+        // } else {
+        //
+        // }
+    });
 }
 
 const init = function() {
@@ -74,7 +104,7 @@ const init = function() {
     showHamburgerMenu();
     showPhoto();
     showTooltip();
-    // sendForm();
+    sendForm();
 }
 
 document.addEventListener("DOMContentLoaded", init);

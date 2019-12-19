@@ -237,31 +237,33 @@
                         </div>
                     </div>
                     <!-- product -->
-                    <div class="radio-wrapper product-wrapper">
+                    <div class="select-wrapper product-wrapper">
                         <label>Choose phone*</label>
-                        <div class="radio-box">
-                            <input type="radio" value="iphone" name="product-radio" /> iPhone 8 (99.99&#36;)
-                            <input type="radio" value="iphone-plus" name="product-radio" /> iPhone 8 Plus (129.99&#36;)
-                        </div>
+                        <select name="chooseProduct" class="select">
+                            <option value="-1">choose phone</option>
+                            <option value="iphone">iPhone 8 (99.99&#36;)</option>
+                            <option value="iphone-plus">iPhone 8 Plus (129.99&#36;)</option>
+                        </select>
                     </div>
                     <!-- color -->
-                    <div class="radio-wrapper color-wrapper">
+                    <div class="select-wrapper color-wrapper">
                         <label>Choose color*</label>
-                        <div class="radio-box">
-                            <input type="radio" value="silver" name="color-radio" /> Silver
-                            <input type="radio" value="space-gray" name="color-radio" /> Space Gray
-                            <input type="radio" value="gold" name="color-radio" /> Gold
-                            <input type="radio" value="red" name="color-radio" /> Red
-                            <!-- red only for iphone 8 plus -->
-                        </div>
+                        <select name="chooseColor" class="select">
+                            <option value="-1">choose color</option>
+                            <option value="silver">Silver</option>
+                            <option value="space-gray">Space Gray</option>
+                            <option value="gold">Gold</option>
+                            <option value="red">Red (iPhone 8 Plus)</option>
+                        </select>
                     </div>
                     <!-- capacity -->
-                    <div class="radio-wrapper capacity-wrapper">
+                    <div class="select-wrapper capacity-wrapper">
                         <label>Choose capacity*</label>
-                        <div class="radio-box">
-                            <input type="radio" value="64" name="capacity-radio" /> 64 GB
-                            <input type="radio" value="256" name="capacity-radio" /> 256 GB (+ 40.00&#36;)
-                        </div>
+                        <select name="chooseCapacity" class="select">
+                            <option value="-1">choose capacity</option>
+                            <option value="64">64 GB</option>
+                            <option value="256">256 GB (+ 40.00&#36;)</option>
+                        </select>
                     </div>
                     <p class="amount-paragraph">
                         To pay:
@@ -270,7 +272,6 @@
                     <div class="form-btn-wrapper">
                         <input type="submit" class="form-btn" id="form-btn" value="Buy iPhone 8">
                     </div>
-                    <p class="form-message"></p>
                     <div class="form-links">
                         <a href="#" target="_blank">Privacy policy</a>
                         <a href="#" target="_blank">Terms and conditions</a>
