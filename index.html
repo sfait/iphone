@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -157,6 +157,7 @@
         <section class="form" id="form">
             <div class="form-wrapper wrapper">
                 <h2 class="second-header">Buy iPhone 8</h2>
+                <img src="img/iphone.png" alt="iphone" />
                 <form class="form-box">
                     <!-- name -->
                     <div class="form-item">
@@ -236,10 +237,69 @@
                         </div>
                     </div>
                     <!-- product -->
+                    <div class="radio-wrapper product-wrapper">
+                        <label>Choose phone</label>
+                        <div class="radio-box">
+                            <input type="radio" value="iphone" name="product-radio" /> iPhone 8
+                            <input type="radio" value="iphone-plus" name="product-radio" /> iPhone 8 Plus
+                        </div>
+                    </div>
+                    <!-- color -->
+                    <div class="radio-wrapper color-wrapper">
+                        <label>Choose color</label>
+                        <div class="radio-box">
+                            <input type="radio" value="silver" name="color-radio" /> Silver
+                            <input type="radio" value="space-gray" name="color-radio" /> Space Gray
+                            <input type="radio" value="gold" name="color-radio" /> Gold
+                            <input type="radio" value="red" name="color-radio" /> Red
+                            <!-- red only for iphone 8 plus -->
+                        </div>
+                    </div>
+                    <!-- capacity -->
+                    <div class="radio-wrapper capacity-wrapper">
+                        <label>Choose capacity</label>
+                        <div class="radio-box">
+                            <input type="radio" value="64" name="capacity-radio" /> 64 GB
+                            <input type="radio" value="256" name="capacity-radio" /> 256 GB (+ 40 &#36;)
+                        </div>
+                    </div>
+                    <p class="cost-paragraph">
+                        To pay:
+                        <br /><span class="cost">0</span> &#36;
+                    </p>
+                    <div class="form-btn-wrapper">
+                        <input type="submit" class="form-btn" id="form-btn" value="Buy iPhone 8">
+                    </div>
+                    <div class="form-links">
+                        <a href="#" target="_blank">Privacy policy</a>
+                        <a href="#" target="_blank">Terms and conditions</a>
+                        <a href="#" target="_blank">Contact</a>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-wrapper wrapper">
+            <div class="copy">
+                &copy; 2019 iPhone 8
+            </div>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+                    <span class="fab fa-youtube" aria-hidden="true"></span>
+                    <span class="sr-only">YouTube</span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                    <span class="fab fa-instagram" aria-hidden="true"></span>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                    <span class="fab fa-facebook" aria-hidden="true"></span>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

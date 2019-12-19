@@ -64,11 +64,17 @@ function showTooltip() {
     }
 }
 
+function sendForm() {
+
+
+}
+
 const init = function() {
     changeTitle();
     showHamburgerMenu();
     showPhoto();
     showTooltip();
+    // sendForm();
 }
 
 document.addEventListener("DOMContentLoaded", init);
