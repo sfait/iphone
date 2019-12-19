@@ -49,7 +49,7 @@ function showPhoto() {
 }
 
 function showTooltip() {
-    const questionSigns = document.querySelectorAll(".tooltip-wrapper");
+    const questionSigns = document.querySelectorAll(".tooltip-box");
 
     for (let i = 0; i < questionSigns.length; i++) {
         questionSigns[i].addEventListener("mouseover", function() {
