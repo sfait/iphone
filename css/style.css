@@ -9,9 +9,6 @@ html, body {
     width: 100%;
     position: relative;
     scroll-behavior: smooth;
-}
-
-body {
     overflow-x: hidden;
 }
 
@@ -809,7 +806,7 @@ body {
 }
 
 .form-btn-wrapper {
-    margin: 2.5rem 0;
+    margin: 2.5rem 0 0.5rem;
 }
 
 .form-btn {
@@ -826,6 +823,11 @@ body {
 
 .form-btn:hover {
     background: rgba(89, 143, 185, 0.8);
+}
+
+.form-message {
+    color: #ff0000;
+    padding-bottom: 1rem;
 }
 
 .form-links a {
